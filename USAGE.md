@@ -1,4 +1,4 @@
-# Usage of PASS
+# Usage of SAMPASS
 [Installation](#1)
 
 [Training](#2)
