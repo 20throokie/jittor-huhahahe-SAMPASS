@@ -8,7 +8,7 @@ Baseline:PASS, containing four steps. 1) A randomly initialized model is trained
 This repo provides four solutions to improve mIoU score based on PASS model and Segment Anything Model. 
 
 ## Visualization
-<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/visualization.png">
+<img src="vis/visualization.png">
 
 Results in th first line comes from PASS baseline. After improvement, object localization is more accurate and multiple objects can be detected.
 
@@ -17,19 +17,19 @@ Results in th first line comes from PASS baseline. After improvement, object loc
 **Adapter**
 
 <div align="center">
-<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/adapter.png" height=250>
+<img src="vis/adapter.png" height=250>
 </div>
 
 **Saliency map**
 
 <div align="center">
-<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/saliency.png" height=160>
+<img src="vis/saliency.png" height=160>
 </div>
 
 **Progressive upsampling**
 
 <div align="center">
-<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/progressive_upsampling.png" height=180>
+<img src="vis/progressive_upsampling.png" height=180>
 </div>
 
 **Semantic voting**
@@ -39,7 +39,7 @@ Results in th first line comes from PASS baseline. After improvement, object loc
 
 **Performance**
 
-<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/performance.png">
+<img src="vis/performance.png">
 
 ## Install 
 
