@@ -62,7 +62,7 @@ Project implemented on 4 2080ti gpus. Training time in total is around 2 days.
 
 ## Acknowledgement
 
-Code is based on Paper [Large-scale Unsupervised Semantic Segmentation](https://arxiv.org/abs/2106.03149), refering to [segment-aanything](https://github.com/facebookresearch/segment-anything) and [dino](https://github.com/facebookresearch/dino)
+Code is based on Paper [Large-scale Unsupervised Semantic Segmentation](https://arxiv.org/abs/2106.03149), refering to [segment-anything](https://github.com/facebookresearch/segment-anything) and [dino].(https://github.com/facebookresearch/dino)
 
 
 
