@@ -1,4 +1,4 @@
-# Jittor Large Scale Unsupervised Semantic Segmentation (PASS + SAM)
+# Jittor Competition: Large Scale Unsupervised Semantic Segmentation (PASS + SAM)
 	
 ## Introduction
 ![image](https://user-images.githubusercontent.com/20515144/196449430-5ac6a88c-24ea-4a82-8a45-cd244aeb0b3b.png)
