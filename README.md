@@ -7,7 +7,7 @@ We propose a new method for LUSS, namely PASS, containing four steps. 1) A rando
 
 More details about the LUSS task and [ImageNet-S dataset](https://github.com/LUSSeg/ImageNet-S) are in [project page](https://LUSSeg.github.io/) and [paper link](https://arxiv.org/abs/2106.03149).
 ## Visualization
-![image]([https://user-images.githubusercontent.com/20515144/196449430-5ac6a88c-24ea-4a82-8a45-cd244aeb0b3b.png](https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/visualization.png))
+<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/visualization.png">
 
 Results in th first line comes from PASS baseline. After improvement, object localization is more accurate and multiple objects can be detected.
 
