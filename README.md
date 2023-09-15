@@ -50,6 +50,12 @@ Project implemented on 4 2080ti gpus. Training time in total is around 2 days.
 - python >= 3.7
 - jittor >= 1.6.1
 
+## Inference
+
+```
+python test.py
+```
+
 ## Citation
 ```
 @article{gao2022luss,
