@@ -1,11 +1,10 @@
-# PASS method for LUSS task （Jittor version）
+# Jittor Large Scale Unsupervised semantic segmentation (PASS + SAM)
 	
 ## Introduction
 ![image](https://user-images.githubusercontent.com/20515144/196449430-5ac6a88c-24ea-4a82-8a45-cd244aeb0b3b.png)
 
-We propose a new method for LUSS, namely PASS, containing four steps. 1) A randomly initialized model is trained with self-supervision of pretext tasks (i.e. our proposed Non-contrastive pixel-to-pixel representation alignment and Deep-to-shallow supervision) to learn shape and category representations. After representation learning, we obtain the features set for all training images. 2) We then apply a pixel-attention-based clustering scheme to obtain pseudo categories and assign generated categories to each image pixel. 3) We fine-tune the pre-trained model with the generated pseudo labels to improve the segmentation quality. 4) During inference, the LUSS model assigns generated labels to each pixel of images, same to the supervised model. 
+Baseline:PASS, containing four steps. 1) A randomly initialized model is trained with self-supervision of pretext tasks。 2) A pixel-attention-based clustering scheme to obtain pseudo categories and assign generated categories to each image pixel. 3) Fine-tune the pre-trained model with the generated pseudo labels to improve the segmentation quality. 4) During inference, the LUSS model assigns generated labels to each pixel of images, same to the supervised model. 
 
-More details about the LUSS task and [ImageNet-S dataset](https://github.com/LUSSeg/ImageNet-S) are in [project page](https://LUSSeg.github.io/) and [paper link](https://arxiv.org/abs/2106.03149).
 ## Visualization
 <img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/visualization.png">
 
