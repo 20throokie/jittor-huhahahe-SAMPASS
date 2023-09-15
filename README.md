@@ -41,7 +41,14 @@ Results in th first line comes from PASS baseline. After improvement, object loc
 
 <img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/performance.png">
 
+## Install 
 
+Project implemented on 4 2080ti. Training time in total is around 2 days.
+
+#### Environment
+- ubuntu 20.04 LTS
+- python >= 3.7
+- jittor >= 1.6.1
 
 ## Citation
 ```
