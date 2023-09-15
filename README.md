@@ -16,23 +16,45 @@ Results in th first line comes from PASS baseline. After improvement, object loc
 
 **Adapter**
 
-<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/adapter.png">
+<div align="center">
+<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/adapter.png" height=250>
+</div>
 
 **Saliency map**
 
-<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/saliency.png">
+<div align="center">
+<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/saliency.png" height=160>
+</div>
 
 **Progressive upsampling**
 
-<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/progressive_upsampling.png">
+<div align="center">
+<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/progressive_upsampling.png" height=180>
+</div>
 
 **Semantic voting**
 
-<figure class="half">
-    <img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/sam1.png">
-    <img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/sam2.png">
-</figure>
+<div align="center"><img src="vis/sam1.png"  height=200><img src="vis/sam2.png" height=200>
+</div>
 
+**Performance**
+
+<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/performance.png">
+
+## Install 
+
+Project implemented on 4 2080ti gpus. Training time in total is around 2 days.
+
+#### Environment
+- ubuntu 20.04 LTS
+- python >= 3.7
+- jittor >= 1.6.1
+
+## Inference
+
+```
+python test.py
+```
 
 ## Citation
 ```
@@ -46,8 +68,9 @@ Results in th first line comes from PASS baseline. After improvement, object loc
 
 ## Acknowledgement
 
-This codebase is build based on the [SwAV codebase](https://github.com/facebookresearch/swav).
+Code is based on [PASS](https://github.com/LUSSeg/PASS), refering to [segment-anything](https://github.com/facebookresearch/segment-anything) and [dino](https://github.com/facebookresearch/dino).
 
-If you have any other question, open an issue or email us via shgao@live.com
+
+
 
 
