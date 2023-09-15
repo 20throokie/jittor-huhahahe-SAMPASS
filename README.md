@@ -28,10 +28,8 @@ Results in th first line comes from PASS baseline. After improvement, object loc
 
 **Semantic voting**
 
-<center class="half">
-<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/sam1.png" width=00/>
-<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/sam2.png" width=200/>
-</center>
+<figure class="half"><img src="vis/sam1.png"><img src="vis/sam2.png">
+</figure>
 
 **Performance**
 
@@ -51,8 +49,6 @@ Results in th first line comes from PASS baseline. After improvement, object loc
 
 ## Acknowledgement
 
-This codebase is build based on the [SwAV codebase](https://github.com/facebookresearch/swav).
 
-If you have any other question, open an issue or email us via shgao@live.com
 
 
