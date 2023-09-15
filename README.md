@@ -16,19 +16,25 @@ Results in th first line comes from PASS baseline. After improvement, object loc
 
 **Adapter**
 
-<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/adapter.png">
+<div align="center">
+<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/adapter.png" height=250>
+</div>
 
 **Saliency map**
 
-<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/saliency.png">
+<div align="center">
+<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/saliency.png" height=250>
+</div>
 
 **Progressive upsampling**
 
-<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/progressive_upsampling.png">
+<div align="center">
+<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/progressive_upsampling.png" height=250>
+</div>
 
 **Semantic voting**
 
-<div align="center"><img src="vis/sam1.png"  height=160><img src="vis/sam2.png" height=160>
+<div align="center"><img src="vis/sam1.png"  height=250><img src="vis/sam2.png" height=250>
 </div>
 
 **Performance**
