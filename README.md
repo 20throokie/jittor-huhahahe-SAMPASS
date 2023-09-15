@@ -28,10 +28,15 @@ Results in th first line comes from PASS baseline. After improvement, object loc
 
 **Semantic voting**
 
-<figure class="half">
-    <img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/sam1.png">
-    <img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/sam2.png">
-</figure>
+<center class="half">
+<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/sam1.png" width=00/>
+<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/sam2.png" width=200/>
+</center>
+
+**Performance**
+
+<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/performance.png">
+
 
 
 ## Citation
