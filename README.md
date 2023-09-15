@@ -28,8 +28,8 @@ Results in th first line comes from PASS baseline. After improvement, object loc
 
 **Semantic voting**
 
-<figure class="half"><img src="vis/sam1.png"><img src="vis/sam2.png">
-</figure>
+<div align="center"><img src="vis/sam1.png"  height=160><img src="vis/sam2.png" height=160>
+</div>
 
 **Performance**
 
