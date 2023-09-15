@@ -29,7 +29,7 @@ Results in th first line comes from PASS baseline. After improvement, object loc
 **Progressive upsampling**
 
 <div align="center">
-<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/progressive_upsampling.png" height=160>
+<img src="https://github.com/20throokie/SAMPASS-jittor/blob/master/vis/progressive_upsampling.png" height=180>
 </div>
 
 **Semantic voting**
