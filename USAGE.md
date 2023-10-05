@@ -34,9 +34,9 @@ python -m pip install faiss-gpu
 
 # Training
 
-In the following, we explain the function of each part in the training scripts, i.e., **[LUSS50](scripts/luss50_pass_jt.sh)**. Also, we provide training log in`./model`folder for reference. 
+In the following, we explain the function of each part in the training scripts, i.e., **[LUSS50](scripts/luss50_pass_jt.sh)**. Also, we provide training log in `./model` folder for reference. 
 ## Step 1: Unsupervised representation learning
-We conduct pretraining with our proposed Non-contrastive pixel-to-pixel representation alignment and Deep-to-shallow supervision.
+We conduct pretraining with our proposed Non-contrastive pixel-to-pixel representation alignment and Deep-to-shallow supervision. Considering image encoedr of segment anything model is used and that vision transformer has an unstable training precess during contrastive learning, we strongly recommand to refer to swav for choosing parameters. 
 ```shell
 CUDA_VISIBLE_DEVICES=${CUDA} mpirun -np ${N_GPU} --allow-run-as-root python main_pretrain.py \
 --arch ${ARCH} \
