@@ -154,7 +154,7 @@ CUDA_VISIBLE_DEVICES=${CUDA} mpirun -np ${N_GPU} --allow-run-as-root python infe
 ## 步骤3：使用像素级伪标签进行微调
 请将“pseudo_path”设置为保存步骤2.4中生成的伪标签的路径。
 ```shell
-CUDA_VISIBLE_DEVICES=${CUDA} mpirun -np ${N_GPU} --allow-run-as-root python main_pixel_finetuning.py \
+CUDA_VISIBLE_DEVICES=${CUDA} mpirun -np ${N_GPU} --allow-run-as-root python main_bootstraping.py \
 --arch ${ARCH} \
 --data_path ${DATA}/train \
 --dump_path ${DUMP_PATH_SEG} \
@@ -171,15 +171,9 @@ CUDA_VISIBLE_DEVICES=${CUDA} mpirun -np ${N_GPU} --allow-run-as-root python main
 ```
 
 ## 步骤4：推理
-如果想评估测试集的性能，请将“mode”设置为“test”，从而生成对应的标签。
+如果想评估测试集的性能，请准备好segment anything预训练模型和步骤3得到的微调后的模型。
 ```shell
-CUDA_VISIBLE_DEVICES=${CUDA} python inference.py -a ${ARCH} \
---pretrained ${DUMP_PATH_SEG}/checkpoint.pth.tar \
---data_path ${IMAGENETS} \
---dump_path ${DUMP_PATH_SEG} \
--c ${NUM_CLASSES} \
---mode validation \
---match_file ${DUMP_PATH_SEG}/validation/match.json
+CUDA_VISIBLE_DEVICES=${CUDA} python test.py
 ```
 
 <div id="2"></div>
