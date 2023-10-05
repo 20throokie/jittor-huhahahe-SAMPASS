@@ -7,6 +7,8 @@ Baseline:PASS, containing four steps. 1) A randomly initialized model is trained
 
 This repo provides four solutions to improve mIoU score based on PASS model and Segment Anything Model. 
 
+Please refer to [USAGE](./USAGE.md) for details.
+
 ## Visualization
 <img src="vis/visualization.png">
 
