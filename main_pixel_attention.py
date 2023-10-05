@@ -63,6 +63,8 @@ def main():
     parser.add_argument('--seed', default=31)
     parser.add_argument('--pretrained', default="/home/zixuanqian/tmp/origin/vit_pass9/checkpoint.pth.tar")
     parser.add_argument('--checkpoint_freq', default=5)
+    parser.add_argument('--sal_path', default=None)
+
 
 
     args = parser.parse_args()
@@ -72,6 +74,7 @@ def main():
     # build data
     train_dataset = CustomDataset(
         args.data_path,
+        args.sal_path,
         args.size_crops,
         args.nmb_crops,
         args.min_scale_crops,
