@@ -155,7 +155,7 @@ CUDA_VISIBLE_DEVICES=${CUDA} mpirun -np ${N_GPU} --allow-run-as-root python infe
 ## Step 3: Finetuning with pixel-level pseudo labels
 Please set the `pseudo_path` as the path that saves pseudo-labels generated in step 2.4.
 ```shell
-CUDA_VISIBLE_DEVICES=${CUDA} mpirun -np ${N_GPU} --allow-run-as-root python main_pixel_finetuning.py \
+CUDA_VISIBLE_DEVICES=${CUDA} mpirun -np ${N_GPU} --allow-run-as-root python main_bootstraping.py \
 --arch ${ARCH} \
 --data_path ${DATA}/train \
 --dump_path ${DUMP_PATH_SEG} \
@@ -172,9 +172,9 @@ CUDA_VISIBLE_DEVICES=${CUDA} mpirun -np ${N_GPU} --allow-run-as-root python main
 ```
 
 ## Step 4: Inference
-If you want to evaluate the performance on test set, please set the `mode` to `test` and submit the generated zip file to our online server.
+If you want to evaluate the performance on test set, please prepare pretrained model of segment anything model and obtained model from Step3.
 ```shell
-CUDA_VISIBLE_DEVICES=${CUDA} python inference.py -a ${ARCH} \
+CUDA_VISIBLE_DEVICES=${CUDA} python test.py -a ${ARCH} \
 --pretrained ${DUMP_PATH_SEG}/checkpoint.pth.tar \
 --data_path ${IMAGENETS} \
 --dump_path ${DUMP_PATH_SEG} \
