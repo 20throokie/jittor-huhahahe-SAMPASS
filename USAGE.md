@@ -34,7 +34,7 @@ python -m pip install faiss-gpu
 
 # Training
 
-In the following, we explain the function of each part in the training scripts, i.e., **[LUSS50](scripts/luss50_pass_jt.sh)**.
+In the following, we explain the function of each part in the training scripts, i.e., **[LUSS50](scripts/luss50_pass_jt.sh)**. Also, we provide training log in`./model`folder for reference. 
 ## Step 1: Unsupervised representation learning
 We conduct pretraining with our proposed Non-contrastive pixel-to-pixel representation alignment and Deep-to-shallow supervision.
 ```shell
