@@ -70,7 +70,7 @@ CUDA_VISIBLE_DEVICES=${CUDA} mpirun -np ${N_GPU} --allow-run-as-root python main
 
 ## 步骤2：使用像素注意力生成像素标签
 ### 步骤2.1：微调像素注意力
-在这一部分中，您应该将"--pretrained"设置为步骤1中获得的预训练权重。
+在这一部分中，您应该将"--pretrained"设置为步骤1中获得的预训练权重并设置通过maskcut得到的显著图路径。
 ```shell
 
 CUDA_VISIBLE_DEVICES=${CUDA} mpirun -np ${N_GPU} --allow-run-as-root python main_pixel_attention.py \
