@@ -36,7 +36,7 @@ python -m pip install faiss-gpu
 我们提供了训练脚本[luss50_pass_jt.sh](scripts/luss50_pass_jt.sh)，下文解释了训练脚本中每个部分的功能。
 
 ## 步骤1：无监督的表征学习
-首先进行非对比像素到像素表示对齐和深度到浅层监督进行预训练。
+首先进行非对比像素到像素表示对齐和深度到浅层监督进行预训练。因为骨干网络使用了segment anything中的图像编码器权重，而Vision Transformer在对比学习训练中不稳定，请参照[swav](https://github.com/facebookresearch/swav)中提示调整超参数。
 ```shell
 CUDA_VISIBLE_DEVICES=${CUDA} mpirun -np ${N_GPU} --allow-run-as-root python main_pretrain.py \
 --arch ${ARCH} \
