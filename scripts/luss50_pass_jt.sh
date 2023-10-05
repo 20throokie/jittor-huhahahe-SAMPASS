@@ -128,13 +128,7 @@ CUDA_VISIBLE_DEVICES=${CUDA} mpirun -np ${N_GPU} --allow-run-as-root python main
 --pseudo_path ${DUMP_PATH_FINETUNE}/train \
 --pretrained ${DUMP_PATH}/checkpoint.pth.tar
 
-CUDA_VISIBLE_DEVICES=${CUDA} python inference.py -a ${ARCH} \
---pretrained ${DUMP_PATH_SEG}/checkpoint.pth.tar \
---data_path ${IMAGENETS} \
---dump_path ${DUMP_PATH_SEG} \
--c ${NUM_CLASSES} \
---mode validation \
---match_file ${DUMP_PATH_SEG}/validation/match.json
+CUDA_VISIBLE_DEVICES=${CUDA} python test.py
 
 CUDA_VISIBLE_DEVICES=${CUDA} python evaluator.py \
 --predict_path ${DUMP_PATH_SEG} \
