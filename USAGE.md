@@ -36,7 +36,7 @@ python -m pip install faiss-gpu
 
 In the following, we explain the function of each part in the training scripts, i.e., **[LUSS50](scripts/luss50_pass_jt.sh)**. Also, we provide training log in `./model` folder for reference. 
 ## Step 1: Unsupervised representation learning
-We conduct pretraining with our proposed Non-contrastive pixel-to-pixel representation alignment and Deep-to-shallow supervision. Considering image encoedr of segment anything model is used and that vision transformer has an unstable training precess during contrastive learning, we strongly recommand to refer to swav for choosing parameters. 
+We conduct pretraining with our proposed Non-contrastive pixel-to-pixel representation alignment and Deep-to-shallow supervision. Considering image encoder of segment anything model is used and that vision transformer has an unstable training precess during contrastive learning, we strongly recommand to refer to swav for choosing parameters. 
 ```shell
 CUDA_VISIBLE_DEVICES=${CUDA} mpirun -np ${N_GPU} --allow-run-as-root python main_pretrain.py \
 --arch ${ARCH} \
@@ -70,7 +70,7 @@ CUDA_VISIBLE_DEVICES=${CUDA} mpirun -np ${N_GPU} --allow-run-as-root python main
 
 ## Step 2: Pixel-label Generation with Pixel-Attention
 ### Step 2.1: Finetuning pixel attention
-In this part, you should set the `--pretrained` as the pretrained weights obtained in step 1.
+In this part, you should set the `--pretrained` as the pretrained weights obtained in step 1 and set the `--sal_path` as the path of saliency map obtained by maskcut.
 ```shell
 
 CUDA_VISIBLE_DEVICES=${CUDA} mpirun -np ${N_GPU} --allow-run-as-root python main_pixel_attention.py \
